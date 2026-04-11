@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE: ${{ env.REGISTRY }}/${{ github.repository }}
+  IMAGE: ghcr.io/${{ github.repository }}
 
 jobs:
   build-and-deploy:
