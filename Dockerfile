@@ -6,7 +6,8 @@ COPY . .
 RUN npx tsc && \
     cp index.html dist/ && \
     cp -r styles dist/ && \
-    cp -r images dist/
+    cp -r images dist/ && \
+    cp -r html dist/
 
 FROM nginx:alpine
 COPY --from=builder /app/dist /usr/share/nginx/html
