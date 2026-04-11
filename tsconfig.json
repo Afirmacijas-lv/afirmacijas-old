@@ -4,9 +4,10 @@
       "noImplicitAny": true,
       "removeComments": true,
       "preserveConstEnums": true,
-      "sourceMap": true
+      "sourceMap": true,
+      "outDir": "dist"
     },
     "files": [
-      "script.ts",
+      "js/script.ts",
     ]
   }
